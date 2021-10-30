@@ -1,0 +1,13 @@
+{
+    "name": "backlog gant",
+    "description": "バックログのガントチャートに機能追加する",
+    "manifest_version": 3,
+    "version": "1.0",
+    "content_scripts": [{
+        "matches": ["https://*.backlog.jp/gantt/*", "https://*.backlog.jp/ViewProjectGantt.action*"],
+        "js": ["main.js"],
+        "css": ["main.css"],
+        "run_att": "document_end"
+    }],
+    "permissions": []
+}
